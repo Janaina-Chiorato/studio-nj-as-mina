@@ -1,0 +1,109 @@
+/* Janela da Mina acima dos atalhos existentes. */
+#chat-mina {
+    --chat--font-family: Montserrat, sans-serif;
+    --chat--color--primary: var(--cobre-acao, #914932);
+    --chat--header--background: var(--cobre-acao, #964c38);
+    --chat--header--color: #fff;
+    --chat--header--padding: 1rem 3.5rem 1rem 1rem;
+    --chat--header--border-bottom: 2px solid #bc9454;
+    --chat--heading--font-size: 1.3rem;
+    --chat--subtitle--font-size: .78rem;
+    --chat--body--background: var(--bege, #f7f1ed);
+    --chat--message--bot--background: #fff;
+    --chat--message--bot--color: #29211c;
+    --chat--message--user--background: var(--cobre-acao, #914932);
+    --chat--message--user--color: #fff;
+    --chat--message--font-size: .88rem;
+    --chat--message--border-radius: .85rem;
+    --chat--input--font-size: 1rem;
+    --chat--input--placeholder--font-size: .85rem;
+    --chat--input--send--button--color: var(--cobre-acao, #914932);
+
+    position: fixed;
+    inset: auto 20px 132px auto;
+    z-index: 1150;
+    width: min(420px, calc(100% - 40px));
+    height: min(520px, calc(100vh - 148px));
+    height: min(520px, calc(100dvh - 148px));
+    max-width: none;
+    max-height: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid var(--cobre-acao, #914932);
+    border-radius: 18px;
+    box-shadow: 0 12px 32px #1d130e33;
+    color: #29211c;
+}
+
+#chat-mina[open] {
+    display: flex;
+    flex-direction: column;
+}
+
+#chat-mina-widget {
+    flex: 1;
+    min-height: 0;
+}
+
+#chat-mina .chat-body {
+    overscroll-behavior: contain;
+}
+
+#chat-mina .chat-header p,
+#chat-mina .chat-message p {
+    color: inherit;
+}
+
+#chat-mina .fechar-chat-mina {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    z-index: 1;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background: #30241d;
+    color: #fff;
+    font-size: 1.5rem;
+    line-height: 1;
+    cursor: pointer;
+}
+
+#chat-mina .fechar-chat-mina:focus-visible {
+    outline-color: #bc9454;
+    outline-offset: 2px;
+}
+
+#chat-mina-estado {
+    margin: 1rem 3.5rem 0 1rem;
+    font-size: .9rem;
+}
+
+#chat-mina .nota-chat-mina {
+    margin: 0;
+    padding: .55rem .85rem;
+    border-top: 1px solid #e7d7c6;
+    background: #fff;
+    color: #544b46;
+    font-size: .72rem;
+    line-height: 1.4;
+}
+
+@media (max-width: 700px) {
+    #chat-mina {
+        right: 12px;
+        bottom: 124px;
+        width: min(420px, calc(100% - 24px));
+        height: min(520px, calc(100vh - 136px));
+        height: min(520px, calc(100dvh - 136px));
+    }
+
+    #chat-mina[data-teclado] {
+        bottom: calc(var(--mina-teclado) + 8px);
+        height: min(520px, calc(100dvh - var(--mina-teclado) - 16px));
+    }
+}

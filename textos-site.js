@@ -1,0 +1,25 @@
+// Chaves públicas de configuracoes. A política SQL deve usar a mesma lista.
+export const TEXTOS_SITE = {
+  hero_titulo: ['Título principal'],
+  hero_titulo_destaque: ['Destaque dourado do título'],
+  hero_subtitulo: ['Subtítulo principal'],
+  sobre_texto: ['Sobre o Studio'],
+  nota_agendamento: ['Aviso do agendamento', '.nota-agendamento'],
+  servicos_titulo: ['Título de serviços', '#servicos .titulo-secao h2'],
+  servicos_subtitulo: ['Apresentação de serviços', '#servicos .titulo-secao p'],
+  profissionais_titulo: ['Título da equipe', '#titulo-profissionais'],
+  profissionais_subtitulo: ['Apresentação da equipe', '#profissionais .titulo-secao p'],
+  espaco_titulo: ['Título do espaço', '#titulo-espaco'],
+  espaco_subtitulo: ['Apresentação do espaço', '#espaco .titulo-secao p'],
+  galeria_titulo: ['Título da galeria', '#galeria .titulo-secao h2'],
+  galeria_subtitulo: ['Apresentação da galeria', '#galeria .titulo-secao p'],
+  contato_titulo: ['Título do contato', '#contato h2'],
+  contato_subtitulo: ['Apresentação do contato', '#contato .contato-info > p'],
+  agendamento_titulo: ['Título do agendamento', '#titulo-agendamento'],
+  agendamento_subtitulo: ['Apresentação do agendamento', '#agendamento .titulo-secao p'],
+  promocoes_titulo: ['Título das promoções', '#titulo-quarta'],
+  promocoes_subtitulo: ['Apresentação das promoções', '.promocao-texto > p:first-of-type'],
+  promocoes_condicoes: ['Condições das promoções', '.condicoes-quarta'],
+  promocoes_atracoes: ['Texto complementar das promoções', '.atracoes-quarta'],
+  sobre_titulo: ['Título de Sobre', '.sobre-texto h2']
+};
